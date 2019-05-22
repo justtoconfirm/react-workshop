@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('Hello World');\n\nvar test = function test() {\n  console.log('Hello World');\n};\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (5:4)\\nYou may need an appropriate loader to handle this file type.\\n| \\n| ReactDOM.render(\\n>     <h1>Hello, world!</h1>,\\n|     document.getElementById('app')\\n| );\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

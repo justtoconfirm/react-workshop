@@ -1,5 +1,7 @@
-console.log('Hello World');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const test = () => {
-	console.log('Hello World');
-}
+ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('app')
+);
