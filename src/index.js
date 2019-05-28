@@ -1,9 +1,9 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 
-import Welcome from './welcome';
+import Button from './Button'
 
 render(
-	<Welcome />,
-    document.getElementById('app')
-);
+	<Button />,
+	document.getElementById('app')
+)
