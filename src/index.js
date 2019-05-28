@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import Button from './button/Button'
+import App from './App'
 
 render(
-	<Button />,
+	<App />,
 	document.getElementById('app')
 )
