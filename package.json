@@ -9,14 +9,19 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
+  "pre-commit": {
+    "run": [
+        "test"
+    ]
+  },
   "standard": {
     "ignore": [
-        "**/out/",
-        "/lib/select2/",
-        "/lib/ckeditor/",
-        "tmp.js",
-        "/dist/",
-        "webpack.config.js"
+      "**/out/",
+      "/lib/select2/",
+      "/lib/ckeditor/",
+      "tmp.js",
+      "/dist/",
+      "webpack.config.js"
     ]
   },
   "repository": {
@@ -35,6 +40,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "pre-commit": "^1.2.2",
     "standard": "^12.0.1",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
