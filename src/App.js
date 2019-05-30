@@ -4,10 +4,7 @@ import Button from './button/Button'
 
 const App = () => {
     return (
-    	<React.Fragment>
-			<Button>Sign in</Button>
-			<Button>Register</Button>
-		</React.Fragment>
+    	<Button>Button</Button>
     )
 }
 
