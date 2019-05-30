@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
+  },
+  "standard": {
+    "ignore": [
+        "**/out/",
+        "/lib/select2/",
+        "/lib/ckeditor/",
+        "tmp.js",
+        "/dist/",
+        "webpack.config.js"
+    ]
   },
   "repository": {
     "type": "git",
