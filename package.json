@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
+    "test:fix": "standard --fix",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
