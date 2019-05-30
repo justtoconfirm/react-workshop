@@ -4,7 +4,7 @@ import Button from './button/Button'
 
 const App = () => {
     return (
-    	<Button>Button</Button>
+    	<Button theme="primary" isFullWidth>Button</Button>
     )
 }
 
