@@ -1,7 +1,16 @@
 import React from 'react'
 import classNames from 'classnames'
 
-const Button = ({ type = 'button', url = '', className = '', theme = '', isFullWidth = false, children }) => {
+const Button = (props) => {
+  const {
+    type = 'button',
+    url = '',
+    className = '',
+    theme = '',
+    isFullWidth = false,
+    children
+  } = props
+
   const buttonClass = classNames('btn', className, {
     'btn--primary': theme === 'primary',
     'btn--secondary': theme === 'secondary',
