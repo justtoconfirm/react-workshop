@@ -1,4 +1,5 @@
 module.exports = {
+    entry: './src/js/',
     module: {
         rules: [
             {
