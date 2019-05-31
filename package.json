@@ -11,7 +11,7 @@
   },
   "pre-commit": {
     "run": [
-        "test"
+      "test"
     ]
   },
   "standard": {
@@ -44,6 +44,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "jest": "^24.8.0",
     "pre-commit": "^1.2.2",
     "standard": "^12.0.1",
     "webpack": "^4.31.0",
