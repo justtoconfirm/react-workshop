@@ -8,6 +8,7 @@
     "jest": "jest",
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "build:dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
