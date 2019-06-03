@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && jest",
-    "testing": "npm run build:dev",
+    "test": "npm run lint && npm run jest",
+    "jest": "jest",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "build:dev": "webpack --mode development",
@@ -13,17 +13,22 @@
   },
   "pre-commit": {
     "run": [
-      "testing"
+      "lint",
+      "jest"
     ]
   },
   "standard": {
+    "env": [
+      "jest"
+    ],
     "ignore": [
-      "**/out/",
-      "/lib/select2/",
-      "/lib/ckeditor/",
-      "tmp.js",
-      "/dist/",
+      "**/dist/",
       "webpack.config.js"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/js/setupTests.js"
     ]
   },
   "engines": {
