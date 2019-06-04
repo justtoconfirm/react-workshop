@@ -1,43 +1,20 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
-// import { Link, Route, Switch } from 'react-router-dom'
 
-// import Button from './presentational/atoms/button/Button'
-
-/* Home component */
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
-
-/* Category component */
-const Category = () => (
-  <div>
-    <h2>Category</h2>
-  </div>
-)
-
-/* Products component */
-const Products = () => (
-  <div>
-    <h2>Products</h2>
-  </div>
-)
+import Home from './presentational/templates/Home'
+import PageTwo from './presentational/templates/PageTwo'
+import PageThree from './presentational/templates/PageThree'
 
 const App = () => {
   return (
-  /* <Button theme='primary' isFullWidth>Test Button</Button> */
-  /* Route components are rendered. if the path prop matches the current URL */
-
     <div>
       <Link to='/'>Home</Link>
-      <Link to='/category'>Category</Link>
-      <Link to='/products'>Products</Link>
+      <Link to='/pagetwo'>Page Two</Link>
+      <Link to='/pagethree'>Page Three</Link>
 
       <Route exact path='/' component={Home} />
-      <Route path='/category' component={Category} />
-      <Route path='/products' component={Products} />
+      <Route path='/pagetwo' component={PageTwo} />
+      <Route path='/pagethree' component={PageThree} />
     </div>
   )
 }
