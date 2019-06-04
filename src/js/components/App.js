@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+
+import Navigation from './presentational/organisms/Navigation'
 
 import Home from './presentational/templates/Home'
 import PageTwo from './presentational/templates/PageTwo'
@@ -9,9 +11,7 @@ import NotFound from './presentational/templates/NotFound'
 const App = () => {
   return (
     <React.Fragment>
-      <Link to='/'>Home</Link>
-      <Link to='/pagetwo'>Page Two</Link>
-      <Link to='/pagethree'>Page Three</Link>
+      <Navigation />
 
       <Switch>
         <Route exact path='/' component={Home} />
