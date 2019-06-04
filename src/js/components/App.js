@@ -35,7 +35,7 @@ const App = () => {
       <Link to='/category'>Category</Link>
       <Link to='/products'>Products</Link>
 
-      <Route path='/' component={Home} />
+      <Route exact path='/' component={Home} />
       <Route path='/category' component={Category} />
       <Route path='/products' component={Products} />
     </div>
