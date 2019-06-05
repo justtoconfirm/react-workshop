@@ -1,5 +1,7 @@
 # React Workshop
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Clone Repository
 ```
 $ git clone https://github.com/justtoconfirm/react-project.git
