@@ -1,9 +1,9 @@
 import React from 'react'
 
 const PageTwo = () => (
-  <div>
+  <React.Fragment>
     <h2>PageTwo</h2>
-  </div>
+  </React.Fragment>
 )
 
 export default PageTwo

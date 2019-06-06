@@ -1,9 +1,9 @@
 import React from 'react'
 
 const PageThree = () => (
-  <div>
+  <React.Fragment>
     <h2>PageThree</h2>
-  </div>
+  </React.Fragment>
 )
 
 export default PageThree

@@ -1,9 +1,9 @@
 import React from 'react'
 
 const NotFound = () => (
-  <div>
+  <React.Fragment>
     <h2>404</h2>
-  </div>
+  </React.Fragment>
 )
 
 export default NotFound
