@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
+import Main from './presentational/atoms/main/Main'
 import Navigation from './presentational/organisms/Navigation'
 
 import Home from './presentational/templates/Home'
@@ -13,12 +14,14 @@ const App = () => {
     <React.Fragment>
       <Navigation />
 
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/pagetwo' component={PageTwo} />
-        <Route path='/pagethree' component={PageThree} />
-        <Route component={NotFound} />
-      </Switch>
+      <Main>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/pagetwo' component={PageTwo} />
+          <Route path='/pagethree' component={PageThree} />
+          <Route component={NotFound} />
+        </Switch>
+      </Main>
     </React.Fragment>
   )
 }
