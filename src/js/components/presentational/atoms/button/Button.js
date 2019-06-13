@@ -7,6 +7,7 @@ const Button = (props) => {
     url = '',
     className = '',
     theme = '',
+    onClick,
     isFullWidth = false,
     children
   } = props
@@ -20,7 +21,7 @@ const Button = (props) => {
   const isAnchorElement = url && (url.includes('http') || url.startsWith('#') || url.startsWith('mailto') || url.startsWith('/'))
 
   const renderButton = () =>
-    <button {...{ type }} className={buttonClass}>{children}</button>
+    <button {...{ type }} className={buttonClass} onClick={onClick}>{children}</button>
 
   const renderAnchor = () =>
     <a href={url} className={buttonClass}>{children}</a>
